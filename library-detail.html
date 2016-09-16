@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!--materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	<style type="text/css">
+  	  @font-face{
+				font-family: avenir;
+				src: url("font/AvenirLTStd-Light.otf");
+			}
+			@font-face {
+				font-family: avenir-ob;
+				src: url("font/AvenirLTStd-Oblique.otf");
+			}
+			
+			@font-face {
+				font-family: avenir-light;
+				src: url("font/AvenirLTStd-Light.otf");
+			}
+			@font-face {
+				font-family: avenir-heavy;
+				src: url("font/AvenirLTStd-Heavy.otf");
+			}
+  		.table_header{
+  			color: #fe9a00;
+  		}
+  		.story{
+  			width: 100%;
+  			height: 469px;
+				background-color: #f4f9ff;
+  		}
+  		.dialog{
+  			margin: auto;
+  			border-style: solid;
+  			border-width:2px;
+			border-color: #2189f4;
+			height: 210px;
+			width: 100%;
+			position: relative;
+  		}
+  		.dialog_triangle{
+  			position: absolute;
+  			background-color: white;
+  			height: 20px;
+  			width: 20px;
+  			border-bottom: 2px solid #2189f4;
+  			border-right: 2px solid #2189f4;
+  			bottom: -12px;
+  			margin-left: -10px;
+  			transform:rotate(45deg);
+  			-ms-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+  		}
+  		.dialog_content{
+  			height: 210px;
+				padding: 35px 60px;
+  		}
+  		.dialog_content>p{
+  			font-size: 17px;
+  			line-height: 1.5;
+  			color: #453c33;
+  		}
+  		.photo_list{
+  			margin: 10px;
+  		}
+  		.all_activity{
+  			width: 100%;
+  			overflow: hidden;
+  		}
+  		.all_activity .modal-content{
+  			margin-top: 80px;
+  			margin-bottom: 40px;
+  			margin-right: 30px;
+  			margin-left: 30px;
+  			padding-top: 0px;
+  			height: 400px;
+  			overflow: auto;
+  		}
+  		.all_activity .modal-content::-webkit-scrollbar{
+  			width: 5px;
+  		}
+  		.all_activity .modal-content::-webkit-scrollbar-track{
+  			background-color: rgba(0,0,0,0.3);
+  		}
+  		.all_activity .modal-content::-webkit-scrollbar-button{
+  			display: none;
+  		}
+  		.all_activity .modal-content::-webkit-scrollbar-thumb{
+  			background-color: black;
+  		}
+  		.mobil-footer{
+				color: white;
+				width: 100%;
+				height: 170px;
+		    margin-top: 0px;
+		    /*height: 80px;*/
+		    padding: 30px;
+		    background-color: #282a31;
+		    vertical-align:middle;
+			}
+  	</style>
+	</head>
+	<body>
+		<!-- HERO IMAGE -->
+		<div style="height: 640px; width: 100%; position: relative; margin-bottom: 40px;">
+			<div>
+				<img src="image/ourwork/library/library2.png" style="width: 100%; height: 640px; z-index: 1; opacity: 2;">
+				<!-- <div style="opacity:0.5; filter(alpha=50)"></div> -->
+			</div>
+			<div style="position: absolute; z-index: 2; top: 140px; color: #ffffff; width: 100%">
+				<p style="font-family: 'avenir'; font-size: 30px; text-align: center; width: 310px; margin:0 auto;">HENAN LIUMANGGANG ELEMANTARY SCHOOL LIBRARY</p>
+				<p style="font-family: 'avenir'; font-size: 15px; text-align: center; line-height: 1.86; margin:0 auto; padding-top: 30px; width: 340px;">Liumangang Elementary School library is located in Liumangang Elementary School Liumangang Village Xinghuaying Town Jinming District Kaifeng City Henan Provence and it was established in 2010 May. As one of the four libraries built by Dream Corps in Henan, Liumangang library consists of three class rooms, which are located in the second floor of the main building. 
+				The school accommodates 270 students and teachers, over 4000 books and 315 library users.</p>
+			</div>
+		</div>
+		<!-- End of HERO IMAGE -->	
+		<div style="width: 100%">
+			<div style="width: 24px; height: 32px; background: #4a4a4a; margin: 0 auto;">
+				<img src="image/ourwork/library-detail/location2.png" style="width: 100%; height: 100%">
+			</div>
+
+			<div style="text-align: center; font-size: 14px; margin-top: 30px;">
+				<p style="font-family: 'avenir-heavy'; margin-top: 0; color: #4a4a4a;">ADDRESS</p>
+				<p style="font-family: 'avenir-light';line-height: 1.86; color: #4a4a4a;">Liumangang Village Xinghuaying Township Jinming District Kaifeng City Henan Provence, 475000</p>
+			</div>
+		</div>
+
+		<div style="width: 100%; margin-top: 40px;">
+			<div style="width: 32px; height: 32px; background: #4a4a4a; margin: 0 auto;">
+				<img src="image/ourwork/library-detail/clock2.png" style="width: 100%; height: 100%">
+			</div>
+
+			<div style="text-align: center; font-size: 14px; margin-top: 30px;">
+				<p style="font-family: 'avenir-heavy'; margin-top: 0; color: #4a4a4a;">OPENING HORS</p>
+				<p style="font-family: 'avenir-light';line-height: 1.86; color: #4a4a4a; margin-bottom: 14px;">8:00 am - 12:00 pm, 1:00 pm - 5:00 pm<br>400 hours per year</p>
+			</div>
+		</div>
+	
+		<div style="text-align:center; margin-top: 60px; margin-bottom:30px;">
+			<p style="font-family: 'avenir'; color: #4a4a4a; font-size: 24px;">NUMBERS</p>
+		</div>
+
+		<div style="width: 100%; text-align: center; font-family: 'avenir'; margin-bottom: 40px;">
+			<div style="margin: 0 auto; height: 96px; width: 84px;">
+				<img src="image/ourwork/library-detail/clock.png" height="96" style="margin: 0 auto; height:100%;"><br/><br/>
+			</div>
+			<p style="font-size: 36px; margin-top: 30px; margin-bottom: 10px;">1</p>
+			<p style="margin-top: 10px;">hrs/wk</p>
+		</div>
+		<div style="width: 100%; text-align: center; font-family: 'avenir'; margin-bottom: 40px;">
+			<div style="margin: 0 auto; height: 120px; ">
+				<img src="image/ourwork/library-detail/children.png" style="margin: 0 auto; height: 100%;"><br/><br/>
+			</div>
+			<p style="font-size: 36px; margin-top: 30px; margin-bottom: 10px;">400</p>
+			<p style="margin-top: 10px;">Children</p>
+		</div>
+		<div style="width: 100%; text-align: center; font-family: 'avenir'; margin-bottom: 40px;">
+			<div style="margin: 0 auto; height: 124px; width: 90px;">
+				<img src="image/ourwork/library-detail/books.png" style="margin: 0 auto; height: 100%;"><br/><br/>
+			</div>
+			<p style="font-size: 36px; margin-top: 30px; margin-bottom: 10px;">2069</p>
+			<p style="margin-top: 10px;">Books</p>
+		</div>
+		<div style="width: 100%; text-align: center; font-family: 'avenir'; margin-bottom: 60px;">
+			<div style="margin: 0 auto; height: 120px; width: 83px;">
+				<img src="image/ourwork/library-detail/teachers.png" style="margin: 0 auto; height: 100%;"><br/><br/>
+			</div>
+			<p style="font-size: 36px; margin-top: 30px; margin-bottom: 10px;">20</p>
+			<p style="margin-top: 10px;">Teachers</p>
+		</div>
+
+
+		<!-- RECENT ACTIVITY -->
+		<div style="text-align:center;margin-bottom:35px;">
+			<p style="font-family: 'avenir'; font-size: 24px;">RECENT ACTIVITY</p>
+		</div>
+		<div class="container">
+			<table class="bordered">
+				<tr>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>《Book name here》</p>
+						<p class="left" style="width: 45%">8/7/2015</p>
+						<p class="left" style="width: 45%">10/7/2015</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>《Book name here》</p>
+						<p class="left" style="width: 45%">8/7/2015</p>
+						<p class="left" style="width: 45%">10/7/2015</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>《Book name here》</p>
+						<p class="left" style="width: 45%">8/7/2015</p>
+						<p class="left" style="width: 45%">10/7/2015</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>《Book name here》</p>
+						<p class="left" style="width: 45%">8/7/2015</p>
+						<p class="left" style="width: 45%">10/7/2015</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>《Book name here》</p>
+						<p class="left" style="width: 45%">8/7/2015</p>
+						<p class="left" style="width: 45%">10/7/2015</p>
+					</td>
+				</tr>
+			</table><br/>
+			<div style="text-align:center;">
+				<a class="btn_nav_c z-depth-0 btn transparent modal-trigger" href="#modal1">VIEW MORE</a>
+			</div>
+		</div>
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal all_activity">
+			<div class="modal-content">
+				<a class="modal-close" href="#!">
+					<img src="image/ourwork/library-detail/close.png" width="19" style="position:absolute; top:20px;right:20px;">
+				</a>
+				<table class="bordered">
+					<tr>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">《Book name here》</p>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">Xinyu Zhou	Class 3-2</p>
+							<p class="left" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">8/7/2015</p>
+							<p class="right" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">10/7/2015</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">《Book name here》</p>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">Xinyu Zhou	Class 3-2</p>
+							<p class="left" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">8/7/2015</p>
+							<p class="right" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">10/7/2015</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">《Book name here》</p>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">Xinyu Zhou	Class 3-2</p>
+							<p class="left" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">8/7/2015</p>
+							<p class="right" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">10/7/2015</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">《Book name here》</p>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">Xinyu Zhou	Class 3-2</p>
+							<p class="left" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">8/7/2015</p>
+							<p class="right" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">10/7/2015</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">《Book name here》</p>
+							<p style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; margin: 0;">Xinyu Zhou	Class 3-2</p>
+							<p class="left" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">8/7/2015</p>
+							<p class="right" style="font-family: 'avenir-light'; font-size: 14px; line-height: 3.29; width: 40%; margin: 0;">10/7/2015</p>
+						</td>
+					</tr>
+		      </table>
+		    </div>
+		</div>
+		<!--End of RECENT ACTIVITY -->
+		
+		<!-- Story of Library -->
+		<div class="story" style="text-align: center; color: #4a4a4a; font-family: 'avenir';">
+			<p style="font-size: 24px; width: 320px; margin: 0 auto; padding-top: 60px;">THE STORY OF THE LIBRARY</p>
+			<p style="font-size: 14px; line-height: 1.86; width: 320px; margin: 0 auto; padding-top: 30px;">Beijing Zhufang Village New Century Dream Library is located in Beijing’s Haidian District, at 52 Zhufang Village Front Street. It was established by Dream Corps in 2006 and is still operating today. This community library is relatively mature in that it has completed its collaboration with the Summer Volunteer Program and currently receives help from long-term volunteers who organize reading activities every weekend on site. This library now owns 2,096 books and has received immense support from many charity organizations.</p>
+		</div>
+		<!-- End of Story of Library -->
+
+		<!-- LIBRARIAN -->
+		<div style="text-align:center;margin-top: 60px; margin-bottom:35px;">
+			<p style="font-family: 'avenir-light'; font-size: 24px;">LIBRARIAN</p>
+		</div>
+
+		<div style="width: 100%; margin-top: 40px;">
+			<div style="margin: 0 auto; heigth: 140px; width: 140px;">
+				<img class="circle" src="image/ourwork/library-detail/head.png" style="width: 100%; height: 100%">
+			</div>
+		</div>
+
+		<div style="width: 100%; text-align: center; color: #4a4a4a;">
+			<p style="font-family: 'avenir-heavy'; font-size: 14px;">YING WANG</p>
+			<p style="font-family: 'avenir-light'; font-size: 14px;">Seventh and ninth Math Teacher</p>
+		</div>
+
+		<div style="width: 100%; text-align: center; margin-top: 30px;">
+			<div style="margin: 0 auto; width: 310px;">
+				<p style="font-family: 'avenir'; font-size: 17px;line-height: 1.53">
+				Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.
+				</p>
+			</div>
+		</div>
+		<!-- End of LIBRARIAN -->
+		
+		<!-- Photos -->
+		<div style="text-align:center; margin-top: 60px;margin-bottom:40px;">
+			<p style="font-family: 'avenir-light'; font-size: 24px;">PHOTOS</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s6">
+					<img class="materialboxed photo_list" width="100%" src="image/ourwork/library-detail/sample1.png">
+				</div>
+				<div class="col s6">
+					<img class="materialboxed photo_list" width="100%" src="image/ourwork/library-detail/sample2.png">
+				</div>
+				<div class="col s6">
+					<img class="materialboxed photo_list" width="100%" src="image/ourwork/library-detail/sample3.png">
+				</div>
+				<div class="col s6">
+					<img class="materialboxed photo_list" width="100%" src="image/ourwork/library-detail/sample4.png">
+				</div>
+			</div>
+		</div>
+		<div style="text-align:center;">
+			<a class="btn_nav_c z-depth-0 btn transparent" >VIEW MORE</a>
+		</div>
+		<!-- End of Photos -->
+
+		<!-- Footer -->
+		<footer class="mobil-footer">
+
+			<div style="width: 100%; height: 33px; margin-bottom: 30px;">
+				<div style="height: 100%; width: 270px; margin: 0 auto;">
+					<div style="float: left;"><img src="image/base/icon/logo mini.png" width="30"></div>
+					<div style="float: right;"><p style="font-family: 'avenir'; font-size: 14px;">© Dream Corps International 2015</p></div>
+				</div>
+			</div>
+			<div style="width: 100%; height: 24px;">
+				<div style="height: 100%; width: 150px; margin: 0 auto;">
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/wechat.png" width="24px"></a>
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/weibo.png" width="24px"></a>
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/facebook.png" width="24px"></a>
+					<a class="left" href="#!"><img src="image/base/icon/twitter.png" width="24"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JS import-->
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/swiper.query.min.js"></script>
+		<!-- Page controler -->
+		<script type="text/javascript">
+			
+		</script>
+		<!-- Nav controler -->
+		<script type="text/javascript">
+			$('.dropdown-button').dropdown({
+				inDuration: 300,
+				outDuration: 225,
+				constrain_width: false,
+				hover: true,
+				gutter: 0,
+				belowOrigin: true,
+			});
+			$('#ourwork_btn').click(function() {
+				/*location.href='#';*/
+				noClick();
+			});
+			$('#drop_ourwork').hover(function(){
+				$('#ourwork_btn').addClass('nav_active');
+				},function(){
+				$('#ourwork_btn').removeClass('nav_active');
+			});
+			$(document).ready(function(){
+				$('.modal-trigger').leanModal();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!--materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<meta charset="utf-8">
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      	<style type="text/css">
+      		@font-face{
+						font-family: avenir;
+						src: url("font/AvenirLTStd-Light.otf");
+					}
+					@font-face {
+						font-family: avenir-ob;
+						src: url("font/AvenirLTStd-Oblique.otf");
+					}
+					
+					@font-face {
+						font-family: avenir-light;
+						src: url("font/AvenirLTStd-Light.otf");
+					}
+      		.hero_image{
+      			height: 600px;
+						width: 100%;
+      			/*margin-top: -75px;*/
+      			margin-bottom: 40px;
+      			position: relative;
+      		}
+      		.hero_image_content{
+      			margin: auto;
+      			position: absolute;
+      			z-index: 2;
+      			top: 136px;
+      			color: #ffffff;
+      		}
+      		.gallary_bk{
+      			position: relative;
+      			overflow: hidden;
+      			margin-bottom: 25px;
+      		}
+      		.slide_mask{
+      			height: 73%;
+      		}
+      		.slide_content>h5{
+      			line-height: 1.6;
+      			font-weight: lighter;
+      			font-size: 24px;
+      		}
+      		.slide_content_p_disp{
+      			position: absolute;
+      			bottom: 0px;
+      		}
+      		.slide_content>p>span{
+      			line-height: 50px;
+      			font-weight: lighter;
+      		}
+      		.head_img{
+      			border:2px solid white;
+      			float: left;
+      			margin-right: 20px;
+      		}
+      		.btn_nav_c{
+      			width: 230px;
+      		}
+      		.table_header{
+      			color: #fe9a00;
+      		}
+      		td{
+      			padding-top: 8px;
+      			padding-bottom: 8px;
+      			height: 55px;
+      		}
+      		td>img{
+      			vertical-align:middle;
+      		}
+      		table.bordered>tbody>tr:hover{
+      			background-color: #f4f9ff;
+      			border-bottom: 1px solid #fe9a00;
+      		}
+      		#list{
+      			margin-bottom: 80px;
+      		}
+      		.mobil-footer{
+						color: white;
+						width: 100%;
+						height: 170px;
+				    margin-top: 0px;
+				    /*height: 80px;*/
+				    padding: 30px;
+				    background-color: #282a31;
+				    vertical-align:middle;
+					}
+      	</style>
+	</head>
+	<body>
+		<!-- HERO IMAGE -->
+		<div class="hero_image">
+			<img src="image/ourwork/library/Hero-image1.png" style="width: 100%; height: 100%; z-index: 1;">
+			<div class="hero_image_content">
+				<p style="font-family: 'avenir'; font-size: 30px; text-align: center; margin: 0px 0px 30px 0px;">LIBRARY & READING</p>
+				<p style="font-family: 'avenir'; font-size: 15px; text-align: center; line-height: 1.86; margin: 0px 20px 0px 20px; font-weight: 300;">
+					We donate carefully selected, high- quality picture books, novels, and nonfictions. We renovate library space to make them inviting. We catalogue books and deploy digital library management system. We train teachers and students to be librarians. We promote book corners in classrooms. We help teachers organize reading activities. We demonstrate within campuses and communities. Through such comprehensive support, we ensure that libraries remain open regularly and books are used effectively so that reading in and out of the classroom can become an integral part of student life.
+				</p>
+			</div>
+		</div>
+		<!-- End of HERO IMAGE -->
+
+		<!-- Switch Button -->
+		<div style="text-align:center;margin-bottom: 50px;">
+			<p style="font-family: 'avenir'; font-size: 24px; margin-bottom: 35px;">SAMPLE OF LIBRARIES</p>
+			<a id="gallary_btn" href="#!">
+				<img id="gallary_img" src="image/ourwork/library/Gallary_active.png" width="30">
+			</a>
+			&nbsp;&nbsp;&nbsp;
+			<a id='list_btn' href="#!">
+				<img id="list_img" src="image/ourwork/library/List.png" width="30">
+			</a>
+		</div>
+		<!-- End of Switch Button -->
+
+		<!-- Gallary  -->
+		<div id="gallary" class="container">
+			<div style="width: 360px; height: 360px; margin: auto;">
+				<div class="gallary_bk">
+					<img class="blur" src="image/ourwork/library/library1.png" width="100%">
+					<div class="slide_bk"></div>
+						<div class="slide_block">
+						<div class="slide_mask ">
+							<img src="image/ourwork/library/library1.png" width="100%">
+						</div>
+						<div class="slide_title" style="padding-top:20px;">
+							<p>Beijing Zhufang Village New Century Dream Library</p>
+						</div>
+						<div class="slide_content" style="padding: 30px;">
+							<h5>Beijing Zhufang Village New Century Dream Library</h5>
+							<!-- <br/><br/> -->
+							<p><img src="image/ourwork/library/head.png" width="50" class="circle head_img">
+							<span>SuHong Zhao</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div style="width: 360px; height: 360px; margin: auto;">
+				<div class="gallary_bk">
+					<img class="blur" src="image/ourwork/library/library2.png" width="100%">
+					<div class="slide_bk"></div>
+						<div class="slide_block">
+						<div class="slide_mask ">
+							<img src="image/ourwork/library/library2.png" width="100%">
+						</div>
+						<div class="slide_title" style="padding-top:20px;">
+							<p>Gansu Shilipu Hui Ethnic Elementary School Library</p>
+						</div>
+						<div class="slide_content" style="padding: 30px;">
+							<h5>Gansu Shilipu Hui Ethnic Elementary School Library</h5>
+							<!-- <br/><br/> -->
+							<p><img src="image/ourwork/library/head.png" width="50" class="circle head_img">
+							<span>SuHong Zhao</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div style="width: 360px; height: 360px; margin: auto;">
+				<div class="gallary_bk">
+					<img class="blur" src="image/ourwork/library/library3.png" width="100%">
+					<div class="slide_bk"></div>
+						<div class="slide_block">
+						<div class="slide_mask ">
+							<img src="image/ourwork/library/library3.png" width="100%">
+						</div>
+						<div class="slide_title" style="padding-top:20px;">
+							<p>Henan Laochangying Village Community Library</p>
+						</div>
+						<div class="slide_content" style="padding: 30px;">
+							<h5>Henan Laochangying Village Community Library</h5>
+							<!-- <br/><br/> -->
+							<p><img src="image/ourwork/library/head.png" width="50" class="circle head_img">
+							<span>SuHong Zhao</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div style="width: 47px; margin:0 auto;">
+				<img src="image/ourwork/library/book.png" style="width: 100%; margin-top: 30px;">
+			</div>
+
+			<div style="text-align:center;">
+				<a id="complete_btn" class="btn_nav_c z-depth-0 btn transparent">COMPLETE LIST OF LIBRARY</a>
+			</div>
+		</div>
+		
+		<!-- End of Gallary -->
+
+		<!-- List page -->
+		<div id="list" class="container">
+			<table class="bordered" style="font-family: avenir-light">
+				<tbody>
+					<tr class="table_header" href='#!'>
+						<td>Beijing</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr href='library-detail.html'>
+						<td>
+							<p>Beijing Zhufang Village New Century Dream Library</p>
+							<p class="left" style="width: 45%">10,000 BOOKS</p>
+							<p class="left" style="width: 45%">400 Children</p>
+						</td>
+						<!-- <td>10,000BOOKS</td> -->
+						<!-- <td>400 Children</td> -->
+					</tr>
+					<tr href='library-detail.html'>
+						<td>
+							<p>Beijing Zhufang Village New Century Dream Library</p>
+							<p class="left" style="width: 45%">10,000 BOOKS</p>
+							<p class="left" style="width: 45%">400 Children</p>
+						</td>
+						<!-- <td>10,000BOOKS</td> -->
+						<!-- <td>400 Children</td> -->
+					</tr>
+					<tr class="table_header" href='#!'>
+						<td>Anhui</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr href='library-detail.html'>
+						<td>
+							<p>Gaoan Elementary School Library</p>
+							<p class="left" style="width: 45%">10,000 BOOKS </p>
+							<p class="left" style="width: 45%">400 Children</p>
+						</td>
+						<!-- <td>10,000BOOKS</td> -->
+						<!-- <td>400 Children</td> -->
+					</tr>
+					<tr class="table_header" href='#!'>
+						<td>Gansu</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr href='library-detail.html'>
+						<td>
+							<p>Gansu Shilipu Hui Ethnic Elementary School Library</p>
+							<p class="left" style="width: 45%">10,000 BOOKS</p>
+							<p class="left" style="width: 45%">400 Children</p>
+						</td>
+						<!-- <td>10,000BOOKS</td> -->
+						<!-- <td>400 Children</td> -->
+					</tr>
+					<tr class="table_header" href='#!'>
+						<td>Henan</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr href='library-detail.html'>
+						<td>
+							<p>Henan Liumanggang Elemantary School Library</p>
+							<p class="left" style="width: 45%">10,000 BOOKS</p>
+							<p class="left" style="width: 45%">400 Children</p>
+						</td>
+						<!-- <td>10,000BOOKS</td> -->
+						<!-- <td>400 Children</td> -->
+					</tr>
+					<tr href='library-detail.html'>
+						<td>
+							<p>Henan Tenglou Experiental Elementary School</p>
+							<p class="left" style="width: 45%">10,000 BOOKS</p>
+							<p class="left" style="width: 45%">400 Children</p>
+						</td>
+						<!-- <td>10,000BOOKS</td> -->
+						<!-- <td>400 Children</td> -->
+					</tr>
+				</tbody>
+			</table>
+			<div style="width: 47px; margin:0 auto;">
+				<img src="image/ourwork/library/book.png" style="width: 100%; margin-top: 30px;">
+			</div>
+		</div>
+		<!-- End of List Page -->
+
+		<!-- Footer -->
+		<footer class="mobil-footer">
+
+			<div style="width: 100%; height: 33px; margin-bottom: 30px;">
+				<div style="height: 100%; width: 270px; margin: 0 auto;">
+					<div style="float: left;"><img src="image/base/icon/logo mini.png" width="30"></div>
+					<div style="float: right;"><p style="font-family: 'avenir'; font-size: 14px;">© Dream Corps International 2015</p></div>
+				</div>
+			</div>
+			<div style="width: 100%; height: 24px;">
+				<div style="height: 100%; width: 150px; margin: 0 auto;">
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/wechat.png" width="24px"></a>
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/weibo.png" width="24px"></a>
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/facebook.png" width="24px"></a>
+					<a class="left" href="#!"><img src="image/base/icon/twitter.png" width="24"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JS import-->
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/swiper.query.min.js"></script>
+		<!-- Page controler -->
+		<script type="text/javascript">
+			
+		</script>
+		<!-- Nav controler -->
+		<script type="text/javascript">
+			$('.dropdown-button').dropdown({
+				inDuration: 300,
+				outDuration: 225,
+				constrain_width: false,
+				hover: true,
+				gutter: 0,
+				belowOrigin: true,
+			});
+			$('#ourwork_btn').click(function() {
+				/*location.href='#';*/
+				noClick();
+			});
+			$('#drop_ourwork').hover(function(){
+				$('#ourwork_btn').addClass('nav_active');
+				},function(){
+				$('#ourwork_btn').removeClass('nav_active');	
+			});
+			$(document).ready(function(){
+				$('.modal-trigger').leanModal();
+			});
+		</script>
+		<!-- Switch controler -->
+		<script type="text/javascript">
+			$('#list').hide();
+			$("#gallary_btn").click(function(){
+				$('#list').hide();
+				$("#gallary").fadeIn();
+				$('#list_img').attr("src","image/ourwork/library/List.png");
+				$('#gallary_img').attr("src","image/ourwork/library/Gallary_active.png");
+			});
+			$("#list_btn").click(function(){
+				$("#gallary").hide();
+				$('#list').fadeIn();
+				$('#list_img').attr("src","image/ourwork/library/List_active.png");
+				$('#gallary_img').attr("src","image/ourwork/library/Gallary.png");
+			});
+			/*Gallary page*/
+			$('.gallary_bk').hover(function(){
+				$(this).find('.slide_mask').slideUp(500);
+				$(this).find('.slide_title').hide();
+				$(this).find('.slide_content').fadeIn('slow');
+				/*$(this).find('.slide_content').find('p').addClass('slide_content_p_disp');*/
+				},function(){
+				$(this).find('.slide_mask').slideDown(500);
+				$(this).find('.slide_title').fadeIn('slow');
+				$(this).find('.slide_content').fadeOut('slow');
+				/*$(this).find('.slide_content').find('p').removeClass('slide_content_p_disp');*/
+			});
+			/*List click*/
+			$('tr').click(function(){
+				location.href = $(this).attr('href');
+			});
+		</script>
+	</body>
+</html>

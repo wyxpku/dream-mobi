@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<!--materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+			@font-face{
+				font-family: avenir;
+				src: url("font/AvenirLTStd-Light.otf");
+			}
+			@font-face {
+				font-family: avenir-ob;
+				src: url("font/AvenirLTStd-Oblique.otf");
+			}
+			.part-container{
+				width: 100%;
+				height: auto;
+				position: relative;
+				top: 0px;
+				left: 0px;
+			}
+			.swiper-container{
+				position: relative;
+				z-index: 1;
+			}
+			.mynavbar{
+				width: 100%;
+				height: 38.5px;
+				position: absolute;
+				top: 20px;
+				z-index: 2;
+			}
+			.logo-img{
+				width: 144px;
+				height: 38.5px;
+				position: relative;
+				left: 20px;
+			}
+			.hero-prop{
+				width: 100%;
+				position: absolute;
+				z-index: 2;
+				top: 100px;
+				/*text-align: center;*/
+			}
+			.hero-prop-content{
+				width: 100%;
+				font-size: 20px;
+				line-height: 30px;
+				font-family: "avenir";
+				text-align: center;
+				color: #ffffff;
+			}
+			.hero-donate{
+				width: 100%;
+				position: absolute;
+				z-index: 2;
+				top: 300px;
+			}
+			.hero-donate-btn{
+				width: 30%;
+  			height: 35px;
+  			background-color: #fe9a00;
+  			color: white;
+  			text-align: center;
+  			/*margin: 0 auto;*/
+  			left: 35%;
+			}
+			.lib_read{
+				text-align: center;
+				font-size: 24px;
+				font-family: "avenir";
+				font-weight: 300;
+				line-height: 50px;
+				color: #4a4a4a;
+			}
+			.imgtitle{
+				overflow: hidden;
+		    vertical-align: middle;
+		    color: white;
+			}
+			.event_title_sign{
+				width: 2px;
+				height: 14px;
+				margin-right: 18px;
+				background-color: #fe9a00;
+				float:left;
+				display:inline;
+			}
+			.event_title{
+				margin-top:0px;
+				margin-bottom: 15px;
+				font-family: "avenir";
+				font-size: 15px;
+			}
+			.imagefooter{
+				color: white;
+				font-style: oblique;
+				font-size: 24px;
+				height: 457px;
+				background-size: cover;
+				background-image: url(image/index/imagefooter.png);
+				margin-bottom: 0px;
+				padding-top: 90px;
+			}
+			.mobil-footer{
+				color: white;
+				width: 100%;
+				height: 170px;
+		    margin-top: 0px;
+		    /*height: 80px;*/
+		    padding: 30px;
+		    background-color: #282a31;
+		    vertical-align:middle;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- part 1: donate -->
+		<div class="part-container">
+			<div class="swiper-container" id="hero-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="image/index/Hero image1.png" style="height:100%;">
+					</div>
+					<div class="swiper-slide">
+						<img src="image/index/Hero image2.png" style="height:100%;">
+					</div>
+				</div>
+				<div class="swiper-pagination" id="swiper-pag-1"></div>
+			</div>
+
+			<div class="mynavbar">
+				<div class="logo-img">
+					<img src="image/base/icon/LOGO_W.png" style="width:100%;height:100%">
+				</div>
+			</div>
+
+			<div class="hero-prop">
+				<p class="hero-prop-content">Great books, great libraries, great</p>
+				<p class="hero-prop-content">activities, all for the children of</p>
+				<p class="hero-prop-content">rural China!</p>
+			</div>
+
+			<div class="hero-donate">
+				<a class="waves-effect waves-light btn-flat hero-donate-btn">DONATE</a>
+			</div>
+		</div>
+
+		<div class="part-container">
+			<div style="width: 100%;">
+				<p class="lib_read">LIBRARY & READING</p>
+			</div>
+			<div id="libfig-container" style="width:100%; position:relative;">
+				<!-- <img class="libfig" src="image/index/library1.png"> -->
+				<!-- <img class="libfig" src="image/index/library2.png"> -->
+				<!-- <div class="imgmask"></div> -->
+				<div class="libfig1" style="width:50%;position:relative;float:left;">
+					<img class="blur" src="image/index/library1.png" height="100%" width="100%">
+					<div class="slide_bk"></div>
+					<div class="slide_block">
+						<div class="slide_mask" style="height:70%;">
+							<img src="image/index/library1.png" width="100%">
+						</div>
+						<div class="imgtitle valign-wrapper" style="height:30%; padding-left:15px;">
+							<p style="font-family: 'avenir'; font-size:13px; font-weight: 200; color: #ffffff;">Beijing Zhufang Village<br/>New Century Dream<br/>Library</p>
+						</div>
+					</div>
+				</div>
+				<div class="libfig2" style="width:50%;position:relative;float:left;">
+					<img class="blur" src="image/index/library2.png" height="100%" width="100%">
+					<div class="slide_bk"></div>
+					<div class="slide_block">
+						<div class="slide_mask" style="height:70%;">
+							<img src="image/index/library2.png" width="100%">
+						</div>
+						<div class="imgtitle valign-wrapper" style="height:30%; padding-left:15px;">
+							<p style="font-family: 'avenir'; font-size:13px; font-weight: 200; color: #ffffff;">Gansu Shilipu Hui<br/>Ethnic Elementary<br/>School Library</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative; margin: 20px;">
+				<p style="font-family: 'avenir'; font-size:13px; line-height: 2; color: #4a4a4a; text-align: center;">We donate carefully selected, high- quality picture books, novels, and nonfictions. We renovate library space to make them inviting. We catalogue books and deploy digital library management system. We train teachers and students to be librarians. We promote book corners in classrooms. We help teachers organize reading activities. We demonstrate within campuses and communities. Through such comprehensive support, we ensure that libraries remain open regularly and books are used effectively so that reading in and out of the classroom can become an integral part of student life.</p>
+			</div>
+			
+			<a style="border: solid 2px #fe9a00; display:block; width:130px; height:35px; text-align:center; padding-top: 7px; position: relative; margin-bottom: 30px;" id="visit-libraries">VISIT LIBRARIES</a>
+
+		</div> <!-- End of lib and reading -->
+
+		<div class="part-container">
+			<div style="width: 100%;">
+				<p class="lib_read">VOLUNTEERING</p>
+			</div>
+			<div class="volunfig" style="width:100%;position:relative;">
+				<img class="blur" src="image/index/volunteer_image.png" height="100%" width="100%">
+				<div class="slide_bk"></div>
+				<div class="slide_block">
+					<div class="slide_mask" style="height:80%;">
+						<img src="image/index/volunteer_image.png" width="100%">
+					</div>
+					<div class="imgtitle" style="height:20%; padding-left:15px;padding-top: 10px;">
+						<p style="font-family: 'avenir'; font-size:13px; font-weight: 200; color: #ffffff; margin:0 0 0 0;">The 2015 Summer Volunteer Program</p>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative; margin: 20px;">
+				<p style="font-family: 'avenir'; font-size:13px; line-height: 2; color: #4a4a4a; text-align: center;">Each year, we recruit volunteers from both China and abroad. After four weeks of online training and three days of training camp, volunteers travel in teams to library sites to work for about a month. While on the site, our volunteers open up libraries and implement circulating practice that is suitable for the schools' specific conditions. They also work closely with teachers to design and run reading activities and promote reading both in school and in the wider community. We also recruit volunteers in metropolitan areas to serve in migrant communities, where they run regular reading activities for migrant children.</p>
+			</div>
+			
+			<a style="border: solid 2px #fe9a00; display:block; width:130px; height:35px; text-align:center; padding-top: 7px; position: relative; margin-bottom: 30px;" id="volunteering">LEARN MORE</a>
+		</div>
+
+		<div class="part-container">
+			<div style="width: 100%;">
+				<p class="lib_read">TEACHER TRAINNING</p>
+			</div>
+			<div id="teafig-container" style="width:100%; position:relative;">
+				<!-- <img class="libfig" src="image/index/library1.png"> -->
+				<!-- <img class="libfig" src="image/index/library2.png"> -->
+				<!-- <div class="imgmask"></div> -->
+				<div class="libfig1" style="width:50%;position:relative;float:left;">
+					<img class="blur" src="image/index/teacher2.png" height="100%" width="100%">
+					<div class="slide_bk"></div>
+					<div class="slide_block">
+						<div class="slide_mask" style="height:80%;">
+							<img src="image/index/teacher2.png" width="100%">
+						</div>
+						<div class="imgtitle valign-wrapper" style="height:20%; padding-left:15px;">
+							<p style="font-family: 'avenir'; font-size:13px; font-weight: 200; color: #ffffff;">Content 1</p>
+						</div>
+					</div>
+				</div>
+				<div class="libfig2" style="width:50%;position:relative;float:left;">
+					<img class="blur" src="image/index/teacher1.png" height="100%" width="100%">
+					<div class="slide_bk"></div>
+					<div class="slide_block">
+						<div class="slide_mask" style="height:80%;">
+							<img src="image/index/teacher1.png" width="100%">
+						</div>
+						<div class="imgtitle valign-wrapper" style="height:20%; padding-left:15px;">
+							<p style="font-family: 'avenir'; font-size:13px; font-weight: 200; color: #ffffff;">Content 2</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="position:relative; margin: 20px;">
+				<p style="font-family: 'avenir'; font-size:13px; line-height: 2; color: #4a4a4a; text-align: center;">Teachers from our sites across China are annually invited for days of training in library and reading. During training, rural teachers work together with domain experts and Dream Corps organizers to share experience and learn from each other. Besides introduction to small library management and children's literature, much of the training is devoted to practical methods for providing guidance and support for students in sustained silent reading, in reading aloud stories, etc. Through many immersive, hands-on sessions, teachers come to be equipped with skills for organizing effective reading activities.</p>
+			</div>
+			
+			<a style="border: solid 2px #fe9a00; display:block; width:130px; height:35px; text-align:center; padding-top: 7px; position: relative; margin-bottom: 30px;" id="teaching">LEARN MORE</a>
+		</div>
+
+		<div class="part-container" style="margin-bottom: 40px;">
+			<div style="width: 100%;">
+				<p class="lib_read">WHAT WE HAVE DONE ?</p>
+			</div>
+			<div class="havedone" style="width: 100%; margin-bottom: 40px;">
+				<div class="doneimg" style="width: 140px; height: 140px; margin: 0 auto;">
+					<img src="image/index/icon 1.png" style="width: 140px; height: 140px;">
+				</div>
+				<div class="donedetail">
+					<p style="font-family: 'avenir'; font-size: 36px; text-align: center; margin-top: 20px;margin-bottom: 0;">50</p>
+					<p style="font-size: 13px; text-align: center; margin-top: 10px;">Libraries</p>
+				</div>
+			</div>
+			<div class="havedone" style="width: 100%; margin-bottom: 40px;">
+				<div class="doneimg" style="width: 140px; height: 140px; margin: 0 auto;">
+					<img src="image/index/icon 2.png" style="width: 140px; height: 140px;">
+				</div>
+				<div class="donedetail">
+					<p style="font-family: 'avenir'; font-size: 36px; text-align: center; margin-top: 20px;margin-bottom: 0;">445,452</p>
+					<p style="font-size: 13px; text-align: center; margin-top: 10px;">Children</p>
+				</div>
+			</div>
+			<div class="havedone" style="width: 100%; margin-bottom: 40px;">
+				<div class="doneimg" style="width: 140px; height: 140px; margin: 0 auto;">
+					<img src="image/index/icon 3.png" style="width: 140px; height: 140px;">
+				</div>
+				<div class="donedetail">
+					<p style="font-family: 'avenir'; font-size: 36px; text-align: center; margin-top: 20px;margin-bottom: 0;">324,324</p>
+					<p style="font-size: 13px; text-align: center; margin-top: 10px;">Books</p>
+				</div>
+			</div>
+			<div class="havedone" style="width: 100%; margin-bottom: 40px;">
+				<div class="doneimg" style="width: 140px; height: 140px; margin: 0 auto;">
+					<img src="image/index/icon 4.png" style="width: 140px; height: 140px;">
+				</div>
+				<div class="donedetail">
+					<p style="font-family: 'avenir'; font-size: 36px; text-align: center; margin-top: 20px;margin-bottom: 0;">405</p>
+					<p style="font-size: 13px; text-align: center; margin-top: 10px;">Volunteer</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="part-container">
+			<div class="slider">
+				<ul class="slides">
+					<li>
+						<img src="image/index/reading_impact_bg.png">
+						<div class="caption center-align">
+         			<p style="font-family: 'avenir'; font-size: 24px; margin-bottom: 30px;">READING IMPACTS</p>
+         			<p style="font-family: 'avenir'; font-size: 14px; margin-bottom: 45px;">COGNITIVE LEVEL</p>
+         			<p style="font-family: 'avenir'; font-size: 14px; line-height: 26px;"> Most of our knowledge is acquired through reading. Reading is the cornerstone of a person's lifetime learning and the vehicle of a whole culture's continuation.</p>
+        		</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="part-container">
+			<div style="width: 100%;">
+				<p class="lib_read">EVENTS</p>
+			</div>
+			<div class="valign-wrapper" style="width: 100%">
+				<img src="image/index/event1.png" style="margin: 0 auto; width: 85%;">
+			</div>
+			
+			<div style="width: 100%">
+				<div style="width: 85%; margin: 0 auto;">
+					<p style="font-family: 'avenir'; font-size: 12px; color: #9b9b9b; margin-top: 20px; margin-bottom: 15px;">2015.04.12</p>
+					<p style="font-family: 'avenir'; font-size: 14px; font-weight: 600; margin-top: 0; margin-bottom: 30px">Summer Volunteer Program Info Session</p>
+				</div>
+			</div>
+			
+			<div style="width: 100%;  margin-bottom: 30px;">
+				<div style="width: 85%; margin: 0 auto;">
+					<div class="event_title_sign"></div>
+					<p class="event-title" style="font-weight: bold;">PROJECT PROGRESS</p>
+
+					<p style="font-family: 'avenir'; font-size: 15px; line-height: 1.86; color: #4a4a4a; margin-bottom: 10px;">The info session was for students who were interested in becoming volunteers for the SVP. We provided some refreshments as well as general information on</p>
+
+					<a style="color: #fe9a00; font-family: 'avenir'; font-size: 14px;">Read More...</a>
+				</div>
+			</div>
+
+			<a style="border: solid 2px #fe9a00; display:block; width:130px; height:35px; text-align:center; padding-top: 7px; position: relative;" id="allevents">ALL EVENTS</a>
+		</div>
+		
+		<div class="part-container">
+			<div class="imagefooter center-align" style="margin-top: 60px;">
+				<p style="font-size: 20px; font-family: 'avenir-ob'; color: #ffffff;">“ Lorem ipsum dolor sit amet,</p>
+				<p style="font-size: 20px; font-family: 'avenir-ob'; color: #ffffff;">consectetur adipisicing elit, sed do</p>
+				<p style="font-size: 20px; font-family: 'avenir-ob'; color: #ffffff;">eiusmod tempor incididunt ut labore</p>
+				<p style="font-size: 20px; font-family: 'avenir-ob'; color: #ffffff;">et dolore magna aliqua. ”</p>
+				<br>
+				<a href="donate.html" class="btn_nav_d z-depth-0 waves-effect btn amber darken-2">DONATE</a>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="mobil-footer">
+
+			<div style="width: 100%; height: 33px; margin-bottom: 30px;">
+				<div style="height: 100%; width: 270px; margin: 0 auto;">
+					<div style="float: left;"><img src="image/base/icon/logo mini.png" width="30"></div>
+					<div style="float: right;"><p style="font-family: 'avenir'; font-size: 14px;">© Dream Corps International 2015</p></div>
+				</div>
+			</div>
+			<div style="width: 100%; height: 24px;">
+				<div style="height: 100%; width: 150px; margin: 0 auto;">
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/wechat.png" width="24px"></a>
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/weibo.png" width="24px"></a>
+					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/facebook.png" width="24px"></a>
+					<a class="left" href="#!"><img src="image/base/icon/twitter.png" width="24"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JS import-->
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/swiper.query.min.js"></script>
+
+		<script>
+		var screen_width = $(window).innerWidth();
+
+		$("#hero-swiper").css("width", '100%');
+		$("#hero-swiper").css("height", parseInt(1.12*screen_width));
+		
+		$("#reading-swiper").css("width", '100%');
+		$("#reading-swiper").css("height", parseInt(1.17*screen_width));
+
+		// 设置LIBRARY & READING部分图片的大小
+		$(".libfig1").css("height", parseInt(0.5*screen_width));
+		$(".libfig2").css("height", parseInt(0.5*screen_width));
+	  $("#libfig-container").css("height", parseInt(0.5*screen_width));
+		$("#teafig-container").css("height", parseInt(0.5*screen_width));
+	  $("#visit-libraries").css("left", parseInt(0.5*(screen_width-130)));
+	  $("#volunteering").css("left", parseInt(0.5*(screen_width-130)));
+	  $("#teaching").css("left", parseInt(0.5*(screen_width-130)));
+	  $("#allevents").css("left", parseInt(0.5*(screen_width-130)));
+	  var mySwiper1 = new Swiper ('#hero-swiper', {
+    	direction: 'horizontal',
+    	loop: true,
+    	autoplay: 3000,
+    	// 如果需要分页器
+    	pagination: '#swiper-pag-1',
+    	paginationClickable :true,
+  	});
+  	
+  	var mySwiper2 = new Swiper ('#reading-swiper', {
+    	direction: 'horizontal',
+    	loop: true,
+    	// 如果需要分页器
+  	});
+
+  	$(document).ready(function(){
+      $('.slider').slider({
+      	full_width: true,
+      	height: 440,
+      	indicators: false,
+      });
+    });
+  	</script>
+	</body>
+</html>
