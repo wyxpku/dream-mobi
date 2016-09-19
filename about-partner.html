@@ -57,17 +57,6 @@
 		    vertical-align:middle;
 			}
 
-			.imgs-container{
-				width: 80%;
-				height: 220px;
-				color: #4a4a4a;
-				margin: 0 auto;
-				min-width: 300px;
-			}
-
-			.img-left, .img-right{
-				width: 140px;
-			}
 		</style>
 	</head>
 	<body>
@@ -168,34 +157,6 @@
 		<script src="js/swiper.query.min.js"></script>
 
 		<script>
-			$('.img-left').click(function(){
-				if ($(this).attr('state') == '1'){
-					$(this).attr('state', '0');
-				} else {
-					$(this).attr('state', '1');
-				}
-
-				if ($(this).next().attr('state') == '1') {
-					$(this).parent().next().next().slideToggle();
-					$(this).next().attr('state', '0')
-				}
-
-				$(this).parent().next().slideToggle();
-			});
-
-			$('.img-right').click(function(){
-				if ($(this).attr('state') == '1'){
-					$(this).attr('state', '0');
-				} else {
-					$(this).attr('state', '1');
-				}
-
-				if ($(this).prev().attr('state') == '1') {
-					$(this).parent().next().slideToggle();
-					$(this).prev().attr('state', '0');
-				}
-				$(this).parent().next().next().slideToggle();
-			});
   	</script>
 	</body>
 </html>
