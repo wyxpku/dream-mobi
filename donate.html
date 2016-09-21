@@ -72,6 +72,13 @@
 		    background-color: #282a31;
 		    vertical-align:middle;
 			}
+			.li-class{
+				 list-style-type: disc;
+				 font-family: 'avenir';
+				 color: #ffffff;
+				 font-size: 14px;
+				 line-height: 2;
+			}
 		</style>
 	</head>
 	<body>
@@ -179,19 +186,48 @@
 			</div>
 		</div>
 
-		<div style="width: 100%; height: 520px; background-image: url(image/donate/slide.png); padding-top: 60px;">
-			<div style="width: 80%; margin: 0 auto;">
+		<div style="width: 100%; height: 520px; background-image: url(image/donate/slide.png); padding-top: 40px; position: relative;">
+			<div style="width: 80%; margin: 0 auto;" id="content1" state="1">
 			
 				<p style="font-family: 'avenir'; font-size: 24px; color: #ffffff; text-align: center;">THE 100% PROMISE</p>
 
 				<p style="font-family: 'avenir'; font-size: 13px; text-align: center; color: #ffffff; line-height: 2;">100% of your donation goes to provide quality books and reading education for rural children in need. Private donors, foundations and sponsors cover our operating costs -- everything from staff salaries to basic office systems to office rent and supplies. This allows us to continue using 100% of public donations for our library projects.</p>
 			</div>
+			<div style="width: 90%; margin: 0 auto;" hidden="true" id="content2" state="0">
+				<p style="font-family: 'avenir'; font-size: 24px; color: #ffffff; text-align: center;">Your donation will be used for</p>
 
-			<div style="width: 90px; height: 35px;">
-				<img src="image/">
+				<ul style="list-style-type: disc; width: 80%; margin: 0 auto; min-width: 265px;">
+					<li class="li-class">The purchase and transportion of books</li>
+					<li class="li-class">Library facilities such as bookshelves, furniture, fans, and lamps</li>
+					<li class="li-class">Renovation of the library such as the repainting of walls</li>
+					<li class="li-class">Library computer for 1kgbook Library Management Software</li>
+					<li class="li-class">Salary or stipend of the local librarians</li>
+					<li class="li-class">Reading Education Program</li>
+					<li class="li-class">Library Maintenance</li>
+				</ul>
 			</div>
 
+			<div style="width: 90px; height: 35px; margin: 0 auto; position: absolute; bottom: 50px; margin: 0 calc((100% - 90px)/2);">
+				<div style="height: 35px; width: 35px; background-color: #fe9a00;" class="changepage left waves-effect">
+					<img src="image/donate/icons/arrow left.png" style="height: 19px; margin: 8px auto; display: block;">
+				</div>
+				<div style="height: 35px; width: 35px; background-color: #fe9a00;" class="changepage right waves-effect">
+					<img src="image/donate/icons/arrows right.png" style="height: 19px; margin: 8px auto; display: block;">
+				</div>
+			</div>
 		</div>
+
+		<p style="font-family: 'avenir'; font-size: 24px; color: #4a4a4a; text-align: center; margin-top: 50px;">HOST A FUNDRAISING EVENT</p>
+
+		<div style="width: 80%; min-width: 280px; margin: 30px auto;">
+			<p style="font-family: 'avenir'; font-size: 13px; color: #4a4a4a; text-align: center; line-height: 2;">As a lean organization that strives to keep overhead costs low, Dream Corps relies on many communities of supporters to raise much-needed funds for our work in rural China. We encourage the efforts of anyone who wants to take on a fundraising event in their community. We work together with you to host events to connect with and educate people about the need for libraries in rural China. We hope you'll get inspired to join forces with others to organize such an event for the benefit of rural children in China.</p>
+		</div>
+		<div style="width: 210px; margin: 0 auto;">
+	 		<a href="#!" target="_blank" class="btn_nav_d z-depth-0 waves-effect btn amber darken-2" style="width: 100%; padding: 0 auto;"><span><img src="image/donate/icons/mail.png" height="9"></span>&nbsp;&nbsp;&nbsp;CONTACT US</a>
+	 	</div>
+	 	<div style="width: 210px; margin: 0 auto;">
+	 		<a href="#!" target="_blank" class="btn_nav_d z-depth-0 waves-effect btn amber darken-2" style="width: 100%; padding: 0 auto;">PAST FUNDRAISING EVENTS</a>
+	 	</div>
 
 		<!-- Footer -->
 		<footer class="mobil-footer">
@@ -226,15 +262,7 @@
 		$("#reading-swiper").css("width", '100%');
 		$("#reading-swiper").css("height", parseInt(1.17*screen_width));
 
-		// 设置LIBRARY & READING部分图片的大小
-		$(".libfig1").css("height", parseInt(0.5*screen_width));
-		$(".libfig2").css("height", parseInt(0.5*screen_width));
-	  $("#libfig-container").css("height", parseInt(0.5*screen_width));
-		$("#teafig-container").css("height", parseInt(0.5*screen_width));
-	  $("#visit-libraries").css("left", parseInt(0.5*(screen_width-130)));
-	  $("#volunteering").css("left", parseInt(0.5*(screen_width-130)));
-	  $("#teaching").css("left", parseInt(0.5*(screen_width-130)));
-	  $("#allevents").css("left", parseInt(0.5*(screen_width-130)));
+
 	  var mySwiper1 = new Swiper ('#hero-swiper', {
     	direction: 'horizontal',
     	loop: true,
@@ -242,12 +270,6 @@
     	// 如果需要分页器
     	pagination: '#swiper-pag-1',
     	paginationClickable :true,
-  	});
-  	
-  	var mySwiper2 = new Swiper ('#reading-swiper', {
-    	direction: 'horizontal',
-    	loop: true,
-    	// 如果需要分页器
   	});
 
   	$(document).ready(function(){
@@ -257,6 +279,15 @@
       	indicators: false,
       });
     });
+    $('.changepage').click(function(){
+				if ($("#content1").attr("state") == "1"){
+					$("#content1").slideToggle();
+					$("#content2").slideToggle();
+				} else {
+					$("#content1").slideToggle();
+					$("#content2").slideToggle();
+				}
+			});
   	</script>
 	</body>
 </html>
