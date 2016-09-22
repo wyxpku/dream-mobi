@@ -15,6 +15,9 @@
 			@font-face {
 				font-family: avenir-ob;
 				src: url("font/AvenirLTStd-Oblique.otf");
+			}@font-face {
+				font-family: avenir-medium;
+				src: url("font/AvenirLTStd-Medium.otf");
 			}
 			.part-container{
 				width: 100%;
@@ -120,6 +123,25 @@
 		</style>
 	</head>
 	<body>
+		<nav style="z-index: 5; height: 40px; position: absolute; top: 20px;" class="transparent z-depth-0">
+			<img src="image/base/icon/LOGO_W.png" style="height: 40px; padding-left: 20px; float: left;">
+	    <div id="slide-out" class="side-nav" style="background-color: #ffffff;">
+	    	<a class="btn-flat waves-effect" style="font-family: 'avenir-medium'; font-size: 14px; color: #6a6e72; font-weight: 500; text-align: center; margin-top: 60px; height: 50px;" href="#"><p style="margin: 18px auto;">HOME</p></a>
+	    	<a class="btn-flat waves-effect" style="font-family: 'avenir-medium'; font-size: 14px; color: #6a6e72; font-weight: 500; text-align: center; height: 50px;" href="#"><p style="margin: 18px auto;">OUR WORK</p></a>
+				
+				<a href="#" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px;"><p style="margin: 13px auto;">Library & Reading</p></a>
+				<a href="#" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px;"><p style="margin: 13px auto;">Volunteering</p></a>
+				<a href="#" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px; margin-bottom: 10px;"><p style="margin: 13px auto;">Teacher Training</p></a>
+
+
+	    	<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="#"><p style="margin: 18px auto;">EVENT</p></a>
+	    	<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="#"><p style="margin: 18px auto;">CHAPTERS</p></a>
+	    	<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="#"><p style="margin: 18px auto;">ABOUT US</p></a>
+
+	    	<a class="waves-effect waves-light btn-flat hero-donate-btn" style="height: 35px; width: 130px; color: #ffffff; margin: 0 auto; left: 0; font-family: 'avenir'; font-size: 14px; padding: 0; margin-top: 30px;"><p style="margin: 10.5px auto;">DONATE</p></a>
+	    </div>
+			<img src="image/base/icon/menu.png" style="height: 40px; padding-right: 20px; float: right;" class="button-collapse" data-activates="slide-out" >
+		</nav>
 		<!-- part 1: donate -->
 		<div class="part-container">
 			<div class="swiper-container" id="hero-swiper">
@@ -132,12 +154,6 @@
 					</div>
 				</div>
 				<div class="swiper-pagination" id="swiper-pag-1"></div>
-			</div>
-
-			<div class="mynavbar">
-				<div class="logo-img">
-					<img src="image/base/icon/LOGO_W.png" style="width:100%;height:100%">
-				</div>
 			</div>
 
 			<div class="hero-prop">
@@ -409,12 +425,19 @@
   	});
 
   	$(document).ready(function(){
+  		$(".button-collapse").sideNav({
+  			menuWidth: 260,
+  			edge: 'right',
+  			closeOnClick: true
+  		});
+
       $('.slider').slider({
       	full_width: true,
       	height: 440,
       	indicators: false,
       });
     });
-  	</script>
+
+  	</script>  	
 	</body>
 </html>
