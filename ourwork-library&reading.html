@@ -390,6 +390,12 @@
 			$('tr').click(function(){
 				location.href = $(this).attr('href');
 			});
+			$("#complete_btn").click(function(){
+				$("#gallary").hide();
+				$('#list').fadeIn();
+				$('#list_img').attr("src","image/ourwork/library/List_active.png");
+				$('#gallary_img').attr("src","image/ourwork/library/Gallary.png");
+			});
 			$(document).ready(function(){
 				$('.modal-trigger').leanModal();
 				$(".button-collapse").sideNav({

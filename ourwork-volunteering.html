@@ -284,7 +284,7 @@
 			<p style="text-indent:0;color:#fe9a00;text-decoration:underline;">volunteer@dreamcorps.org</p>
 		</div>
 
-		<div style="width: 100%; background-color: #f4f9ff; height: 1850px; margin-top: 60px;">
+		<div style="width: 100%; background-color: #f4f9ff; height: 1850px; margin-top: 60px;" id="colored">
 			<div style="width: 100%; text-align: center; padding-top: 60px; position: relative;">
 				<p style="font-family: 'avenir-light'; font-size: 24px; margin: 0;">APPLICATION</p>
 			</div>
@@ -346,7 +346,7 @@
 				</div>
 			</div>
 
-			<div style="width: 100%; height: 26px; margin-top: 30px;">
+			<div class="choose_title" style="width: 100%; height: 26px; margin-top: 30px;" state="1" value="1">
 				<div style="width: 10px; height: 26px; margin-left: 40px; float: left;">
 					<img src="image/ourwork/volunteer/open_list.png" style="width: 10px; float: top;">
 				</div>
@@ -356,7 +356,11 @@
 					</p>
 				</div>
 			</div>
-			<div style="width: 100%; height: 26px; margin-top: 30px;">
+			<div class="dialog_content" hidden="true">
+				<p style="text-indent:0;">Please carefully read and answer the following questions clearly and directly. Essays written in either English or Chinese are acceptable. Limit your response to 600 words per question.<br/>Why do you want to be a volunteer, and why do you choose Dream Corps International? Please describe one of your life experiences which you are especially proud of.</p>
+			</div>
+
+			<div class="choose_title" style="width: 100%; height: 26px; margin-top: 30px;" state="1" value="1">
 				<div style="width: 10px; height: 26px; margin-left: 40px; float: left;">
 					<img src="image/ourwork/volunteer/open_list.png" style="width: 10px; float: top;">
 				</div>
@@ -366,7 +370,11 @@
 					</p>
 				</div>
 			</div>
-			<div style="width: 100%; height: 26px; margin-top: 30px;">
+			<div class="dialog_content" hidden="true">
+				<p style="text-indent:0;">Nothing...</p>
+			</div>
+
+			<div class="choose_title" style="width: 100%; height: 26px; margin-top: 30px;" state="1" value="1">
 				<div style="width: 10px; height: 26px; margin-left: 40px; float: left;">
 					<img src="image/ourwork/volunteer/open_list.png" style="width: 10px; float: top;">
 				</div>
@@ -375,6 +383,9 @@
 						RECOMMENDATION LETTER
 					</p>
 				</div>
+			</div>
+			<div class="dialog_content" hidden="true">
+				<p style="text-indent:0;">Nothing...</p>
 			</div>
 		</div>
 		<!-- Footer -->
@@ -409,9 +420,15 @@
 				if ($(this).attr('state') == '1') {
 					$(this).find('#sig').attr('src','image/ourwork/volunteer/close_list.png');
 					$(this).attr('state', '0');
+					if ($(this).attr('value') == '1'){
+						$("#colored").css("height", $("#colored").height() + 320);
+					}
 				} else{
 					$(this).find('#sig').attr('src','image/ourwork/volunteer/open_list.png');
 					$(this).attr('state', '1');
+					if ($(this).attr('value') == '1'){
+						$("#colored").css("height", $("#colored").height() - 320);
+					}
 				};
 				$(this).next().slideToggle();
 			});
