@@ -1,413 +1,413 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!--materialize.css-->
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-		<link rel="stylesheet" href="css/swiper.min.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<style type="text/css">
-			@font-face{
-				font-family: avenir;
-				src: url("font/AvenirLTStd-Light.otf");
-			}
-			@font-face {
-				font-family: avenir-ob;
-				src: url("font/AvenirLTStd-Oblique.otf");
-			}
+<head>
+	<!--materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
+		@font-face{
+			font-family: avenir;
+			src: url("font/AvenirLTStd-Light.otf");
+		}
+		@font-face {
+			font-family: avenir-ob;
+			src: url("font/AvenirLTStd-Oblique.otf");
+		}
+		
+		@font-face {
+			font-family: avenir-light;
+			src: url("font/AvenirLTStd-Light.otf");
+		}
+		@font-face {
+			font-family: avenir-heavy;
+			src: url("font/AvenirLTStd-Heavy.otf");
+		}
+		@font-face {
+			font-family: avenir-medium;
+			src: url("font/AvenirLTStd-Medium.otf");
+		}
+		
+		.event_title{
+			margin-top:0px;
+			margin-bottom: 15px;
+			font-family: "avenir";
+			font-size: 15px;
+		}
+		.imagefooter{
+			color: white;
+			font-style: oblique;
+			font-size: 24px;
+			height: 457px;
+			background-size: cover;
+			background-image: url(image/index/imagefooter.png);
+			margin-bottom: 0px;
+			padding-top: 90px;
+		}
+		.mobil-footer{
+			color: white;
+			width: 100%;
+			height: 170px;
+			margin-top: 0px;
+			/*height: 80px;*/
+			padding: 30px;
+			background-color: #282a31;
+			vertical-align:middle;
+		}
+
+		.imgs-container{
+			width: 80%;
+			height: 220px;
+			color: #4a4a4a;
+			margin: 0 auto;
+			min-width: 300px;
+		}
+
+		.img-left, .img-right{
+			width: 140px;
+		}
+	</style>
+</head>
+<body>
+	<nav style="z-index: 1002; height: 40px; position: absolute; top: 20px;" class="transparent z-depth-0">
+		<img src="image/base/icon/LOGO_W.png" style="height: 40px; padding-left: 20px; float: left;">
+		<div id="slide-out" class="side-nav" style="background-color: #ffffff;">
+			<a class="btn-flat waves-effect" style="font-family: 'avenir-medium'; font-size: 14px; color: #6a6e72; font-weight: 500; text-align: center; margin-top: 60px; height: 50px;" href="index.html"><p style="margin: 18px auto;">HOME</p></a>
+			<a class="btn-flat waves-effect" style="font-family: 'avenir-medium'; font-size: 14px; color: #6a6e72; font-weight: 500; text-align: center; height: 50px; background-color: #f0f0f0;" href="#"><p style="margin: 18px auto;">OUR WORK</p></a>
 			
-			@font-face {
-				font-family: avenir-light;
-				src: url("font/AvenirLTStd-Light.otf");
+			<a href="ourwork-library&reading.html" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px;"><p style="margin: 13px auto;">Library & Reading</p></a>
+			<a href="ourwork-volunteering.html" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px;"><p style="margin: 13px auto;">Volunteering</p></a>
+			<a href="ourwork-teachertraining.html" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px; margin-bottom: 10px;"><p style="margin: 13px auto;">Teacher Training</p></a>
+
+
+			<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="event.html"><p style="margin: 18px auto;">EVENT</p></a>
+			<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="chapters.html"><p style="margin: 18px auto;">CHAPTERS</p></a>
+			<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="about.html"><p style="margin: 18px auto;">ABOUT US</p></a>
+
+			<a class="waves-effect waves-light btn-flat" style="height: 35px; width: 130px; color: #ffffff; margin: 0 auto; font-family: 'avenir'; font-size: 14px; padding: 0; margin-top: 30px; background-color: #fe9a00; text-align: center;"><p style="margin: 10.5px auto;">DONATE</p></a>
+		</div>
+		<img src="image/base/icon/menu.png" style="height: 40px; padding-right: 20px; float: right;" class="button-collapse" data-activates="slide-out" >
+	</nav>
+	<!-- HERO IMAGE -->
+	<div style="height: 450px; width: 100%; position: relative; margin-bottom: 40px;">
+		<div>
+			<img src="image/about/Hero-image1.png" style="width: 100%; height: 450px; z-index: 1; opacity: 2;">
+			<!-- <div style="opacity:0.5; filter(alpha=50)"></div> -->
+		</div>
+		<div style="position: absolute; z-index: 2; top: 140px; color: #ffffff; width: 100%">
+			<p style="font-family: 'avenir-light'; font-size: 20px; text-align: center;">ABOUT US</p>
+			<p style="font-family: 'avenir-light'; font-size: 14px; text-align: center; line-height: 1.86; margin:0 auto; padding-top: 30px; width: 304px;">Dream Corps was founded in North Carolina by Chinese scholars and students in 2004. In September 2010，we welcomed our first full time staff, raising our standards for program operations and internal management.</p>
+		</div>
+	</div>
+	
+	<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">TEAM</p>
+	
+	<div style="width: 90%; margin: 0 auto; padding-bottom: 30px;">
+		<p style="font-family: 'avenir-light'; font-size: 13px; color: #4a4a4a; line-height: 2; text-align: center; margin: 0;">Dream Corps was founded in North Carolina by Chinese scholars and students in 2004. In September 2010，we welcomed our first full time staff, raising our standards for program operations and internal management.</p>
+	</div>
+	
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%" state='0'>
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%" state='0'>
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiuxiu Li</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Secretary</p>
+		</div>
+	</div>
+	
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Jocelyn Guo</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Treasurer</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Yuan Zhang</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">China Representative</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Rae Cao</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Director of Public Relations</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Hongfei Li</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Chief Technology Officer</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Kuo Guo</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Chief Chapters Officer</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+
+
+	<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">BOARD</p>
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiuxiu Li</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Secretary</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Jocelyn Guo</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Treasurer</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Yuan Zhang</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">China Representative</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+
+
+	<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">ADVISORY</p>
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiuxiu Li</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Secretary</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+
+
+	<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">HONOR BOARD</p>
+
+	<div class="imgs-container">
+		<div class="img-left left">
+			<img  class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Hongfei Li</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Chief Technology Officer</p>
+		</div>
+		<div class="img-right right">
+			<img class="circle" src="image/about/team/head.png" style="width: 100%">
+			<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
+			<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
+		<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
+			<img src="image/about/team/email.png" style="width: 35px;">
+		</div>
+		<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
+			<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
+		</div>
+	</div>
+
+	<br />
+	<br />
+
+
+	<!-- Footer -->
+	<footer class="mobil-footer">
+
+		<div style="width: 100%; height: 33px; margin-bottom: 30px;">
+			<div style="height: 100%; width: 270px; margin: 0 auto;">
+				<div style="float: left;"><img src="image/base/icon/logo mini.png" width="30"></div>
+				<div style="float: right;"><p style="font-family: 'avenir'; font-size: 14px;">© Dream Corps International 2015</p></div>
+			</div>
+		</div>
+		<div style="width: 100%; height: 24px;">
+			<div style="height: 100%; width: 150px; margin: 0 auto;">
+				<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/wechat.png" width="24px"></a>
+				<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/weibo.png" width="24px"></a>
+				<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/facebook.png" width="24px"></a>
+				<a class="left" href="#!"><img src="image/base/icon/twitter.png" width="24"></a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS import-->
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/swiper.query.min.js"></script>
+
+	<script>
+		$('.img-left').click(function(){
+			if ($(this).attr('state') == '1'){
+				$(this).attr('state', '0');
+			} else {
+				$(this).attr('state', '1');
 			}
-			@font-face {
-				font-family: avenir-heavy;
-				src: url("font/AvenirLTStd-Heavy.otf");
-			}
-			@font-face {
-				font-family: avenir-medium;
-				src: url("font/AvenirLTStd-Medium.otf");
-			}
-			
-			.event_title{
-				margin-top:0px;
-				margin-bottom: 15px;
-				font-family: "avenir";
-				font-size: 15px;
-			}
-			.imagefooter{
-				color: white;
-				font-style: oblique;
-				font-size: 24px;
-				height: 457px;
-				background-size: cover;
-				background-image: url(image/index/imagefooter.png);
-				margin-bottom: 0px;
-				padding-top: 90px;
-			}
-			.mobil-footer{
-				color: white;
-				width: 100%;
-				height: 170px;
-		    margin-top: 0px;
-		    /*height: 80px;*/
-		    padding: 30px;
-		    background-color: #282a31;
-		    vertical-align:middle;
-			}
 
-			.imgs-container{
-				width: 80%;
-				height: 220px;
-				color: #4a4a4a;
-				margin: 0 auto;
-				min-width: 300px;
-			}
-
-			.img-left, .img-right{
-				width: 140px;
-			}
-		</style>
-	</head>
-	<body>
-		<nav style="z-index: 1002; height: 40px; position: absolute; top: 20px;" class="transparent z-depth-0">
-			<img src="image/base/icon/LOGO_W.png" style="height: 40px; padding-left: 20px; float: left;">
-			    <div id="slide-out" class="side-nav" style="background-color: #ffffff;">
-			    	<a class="btn-flat waves-effect" style="font-family: 'avenir-medium'; font-size: 14px; color: #6a6e72; font-weight: 500; text-align: center; margin-top: 60px; height: 50px;" href="index.html"><p style="margin: 18px auto;">HOME</p></a>
-			    	<a class="btn-flat waves-effect" style="font-family: 'avenir-medium'; font-size: 14px; color: #6a6e72; font-weight: 500; text-align: center; height: 50px; background-color: #f0f0f0;" href="#"><p style="margin: 18px auto;">OUR WORK</p></a>
-						
-					<a href="ourwork-library&reading.html" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px;"><p style="margin: 13px auto;">Library & Reading</p></a>
-					<a href="ourwork-volunteering.html" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px;"><p style="margin: 13px auto;">Volunteering</p></a>
-					<a href="ourwork-teachertraining.html" class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; text-transform: none; height: 40px; margin-bottom: 10px;"><p style="margin: 13px auto;">Teacher Training</p></a>
-
-
-			    	<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="event.html"><p style="margin: 18px auto;">EVENT</p></a>
-			    	<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="chapters.html"><p style="margin: 18px auto;">CHAPTERS</p></a>
-			    	<a class="btn-flat waves-effect" style="font-family: 'avenir'; font-size: 14px; color: #6a6e72; text-align: center; height: 50px;" href="about.html"><p style="margin: 18px auto;">ABOUT US</p></a>
-
-			    	<a class="waves-effect waves-light btn-flat" style="height: 35px; width: 130px; color: #ffffff; margin: 0 auto; font-family: 'avenir'; font-size: 14px; padding: 0; margin-top: 30px; background-color: #fe9a00; text-align: center;"><p style="margin: 10.5px auto;">DONATE</p></a>
-			    </div>
-			<img src="image/base/icon/menu.png" style="height: 40px; padding-right: 20px; float: right;" class="button-collapse" data-activates="slide-out" >
-		</nav>
-		<!-- HERO IMAGE -->
-		<div style="height: 450px; width: 100%; position: relative; margin-bottom: 40px;">
-			<div>
-				<img src="image/about/Hero-image1.png" style="width: 100%; height: 450px; z-index: 1; opacity: 2;">
-				<!-- <div style="opacity:0.5; filter(alpha=50)"></div> -->
-			</div>
-			<div style="position: absolute; z-index: 2; top: 140px; color: #ffffff; width: 100%">
-				<p style="font-family: 'avenir-light'; font-size: 20px; text-align: center;">ABOUT US</p>
-				<p style="font-family: 'avenir-light'; font-size: 14px; text-align: center; line-height: 1.86; margin:0 auto; padding-top: 30px; width: 304px;">Dream Corps was founded in North Carolina by Chinese scholars and students in 2004. In September 2010，we welcomed our first full time staff, raising our standards for program operations and internal management.</p>
-			</div>
-		</div>
-		
-		<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">TEAM</p>
-		
-		<div style="width: 90%; margin: 0 auto; padding-bottom: 30px;">
-			<p style="font-family: 'avenir-light'; font-size: 13px; color: #4a4a4a; line-height: 2; text-align: center; margin: 0;">Dream Corps was founded in North Carolina by Chinese scholars and students in 2004. In September 2010，we welcomed our first full time staff, raising our standards for program operations and internal management.</p>
-		</div>
-		
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%" state='0'>
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%" state='0'>
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiuxiu Li</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Secretary</p>
-			</div>
-		</div>
-		
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Jocelyn Guo</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Treasurer</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Yuan Zhang</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">China Representative</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Rae Cao</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Director of Public Relations</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Hongfei Li</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Chief Technology Officer</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Kuo Guo</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Chief Chapters Officer</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-
-
-		<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">BOARD</p>
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiuxiu Li</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Secretary</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Jocelyn Guo</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Treasurer</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Yuan Zhang</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">China Representative</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-
-
-		<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">ADVISORY</p>
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiuxiu Li</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Secretary</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-
-
-		<p style="font-family: 'avenir-light'; font-size: 24px; text-align: center; margin: 40px 0 25px 0;">HONOR BOARD</p>
-
-		<div class="imgs-container">
-			<div class="img-left left">
-				<img  class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Hongfei Li</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">Chief Technology Officer</p>
-			</div>
-			<div class="img-right right">
-				<img class="circle" src="image/about/team/head.png" style="width: 100%">
-				<p style="font-family: 'avenir-medium'; font-size: 13px; font-weight: 500; text-align: center;">Xiaoruo Gai</p>
-				<p style="font-family: 'avenir-light'; font-size: 13px; font-weight: 300; text-align: center;">President</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;">Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-		<div style="width: 100%; background-color: #f4f9ff;" hidden="true">
-			<div style="width: 35px; margin: 0 auto; padding-top: 30px;">
-				<img src="image/about/team/email.png" style="width: 35px;">
-			</div>
-			<div style="width: 80%; margin: 0 auto; padding-bottom: 30px;">
-				<p style="font-family: 'avenir-light'; font-size: 13px; color: #574d42; text-align: center; line-height: 2;"> 2222.Mr. Wang currently serves as both Dream Corps’ contact person at Niujie and 1kg Books’ 1kg Ambassador. In his spare time he enjoys reading, watching movies, exercising, and listening to music. He firmly believes that reading not only can enrich students’ daily school life, but can also help underprivileged children to understand the world and get out of their existing environment.</p>
-			</div>
-		</div>
-
-		<br />
-		<br />
-
-
-		<!-- Footer -->
-		<footer class="mobil-footer">
-
-			<div style="width: 100%; height: 33px; margin-bottom: 30px;">
-				<div style="height: 100%; width: 270px; margin: 0 auto;">
-					<div style="float: left;"><img src="image/base/icon/logo mini.png" width="30"></div>
-					<div style="float: right;"><p style="font-family: 'avenir'; font-size: 14px;">© Dream Corps International 2015</p></div>
-				</div>
-			</div>
-			<div style="width: 100%; height: 24px;">
-				<div style="height: 100%; width: 150px; margin: 0 auto;">
-					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/wechat.png" width="24px"></a>
-					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/weibo.png" width="24px"></a>
-					<a class="left" href="#!" style="margin-right: 18px;"><img src="image/base/icon/facebook.png" width="24px"></a>
-					<a class="left" href="#!"><img src="image/base/icon/twitter.png" width="24"></a>
-				</div>
-			</div>
-		</footer>
-
-		<!-- JS import-->
-		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="js/swiper.query.min.js"></script>
-
-		<script>
-			$('.img-left').click(function(){
-				if ($(this).attr('state') == '1'){
-					$(this).attr('state', '0');
-				} else {
-					$(this).attr('state', '1');
-				}
-
-				if ($(this).next().attr('state') == '1') {
-					$(this).parent().next().next().slideToggle();
-					$(this).next().attr('state', '0')
-				}
-
-				$(this).parent().next().slideToggle();
-			});
-
-			$('.img-right').click(function(){
-				if ($(this).attr('state') == '1'){
-					$(this).attr('state', '0');
-				} else {
-					$(this).attr('state', '1');
-				}
-
-				if ($(this).prev().attr('state') == '1') {
-					$(this).parent().next().slideToggle();
-					$(this).prev().attr('state', '0');
-				}
+			if ($(this).next().attr('state') == '1') {
 				$(this).parent().next().next().slideToggle();
+				$(this).next().attr('state', '0')
+			}
+
+			$(this).parent().next().slideToggle();
+		});
+
+		$('.img-right').click(function(){
+			if ($(this).attr('state') == '1'){
+				$(this).attr('state', '0');
+			} else {
+				$(this).attr('state', '1');
+			}
+
+			if ($(this).prev().attr('state') == '1') {
+				$(this).parent().next().slideToggle();
+				$(this).prev().attr('state', '0');
+			}
+			$(this).parent().next().next().slideToggle();
+		});
+		$(document).ready(function(){
+			$(".button-collapse").sideNav({
+				menuWidth: 260,
+				edge: 'right',
+				closeOnClick: true
 			});
-			$(document).ready(function(){
-		  		$(".button-collapse").sideNav({
-		  			menuWidth: 260,
-		  			edge: 'right',
-		  			closeOnClick: true
-		  		});
-		    });
-	  	</script>
-	</body>
+		});
+	</script>
+</body>
 </html>
